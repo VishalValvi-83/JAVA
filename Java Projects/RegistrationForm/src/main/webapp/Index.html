@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 40px;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 30px 40px;
+      border-radius: 10px;
+      width: 400px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      margin-top: 12px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Registration Form</h2>
+    <form action="user-registration" method="post">
+      <label for="fname">Full Name:</label>
+      <input type="text" id="fname" name="fname">
+
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lname">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+
+      <label for="mobno">Mob No:</label>
+      <input type="tel" id="mobno" name="mobno">
+
+      <label for="gender">Gender:</label>
+      <input type="text" id="gender" name="gender">
+
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city">
+
+      <label for="state">State:</label>
+      <input type="text" id="state" name="state">
+
+      <label for="country">Country:</label>
+      <input type="text" id="country" name="country">
+
+      <label for="education">Education:</label>
+      <input type="text" id="education" name="education">
+
+      <label for="tenth">10th:</label>
+      <input type="text" id="tenth" name="tenth">
+
+      <label for="twelfth">12th:</label>
+      <input type="text" id="twelfth" name="twelfth">
+
+      <label for="dob">DOB:</label>
+      <input type="date" id="dob" name="dob">
+
+      <label for="skills">Skills:</label>
+      <input type="text" id="skills" name="skills">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password">
+
+      <input type="submit" value="Register">
+    </form>
+  </div>
+
+</body>
+</html>
