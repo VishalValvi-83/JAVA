@@ -3,7 +3,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
-public class EmployeeMain {
+public class InsertData {
 
 	public static void main(String[] args) throws Exception {
 
@@ -32,18 +32,19 @@ public class EmployeeMain {
 
 			// Create Employee object
 			Employee emp = new Employee();
-			emp.setEmpName("Vishal");
-			emp.setEmpAge(23);
-			emp.setEmpCity("Nandurbar");
-			emp.setEmpSalary("26000");
+			emp.setEmpName("Rahul");
+			emp.setEmpAge(25);
+			emp.setEmpCity("Pune");
+			emp.setEmpSalary("45000");
 			emp.setEmpDept("IT");
 
 			// Save Employee object
 			session.persist(emp);
 			tran.commit();
 			session.close();
-			System.out.println("Employee Data : " + emp.getEmpName() + ", " + emp.getEmpAge() + ", " + emp.getEmpCity()
-					+ ", " + emp.getEmpSalary() + ", " + emp.getEmpDept() + ", inserted successfully");
+			System.out.println("Employee data inserted successfully " + emp);
+//			System.out.println("Employee Data : " + emp.getEmpName() + ", " + emp.getEmpAge() + ", " + emp.getEmpCity()
+//					+ ", " + emp.getEmpSalary() + ", " + emp.getEmpDept() + ", inserted successfully");
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.out.println("Error occurred while inserting employee data: " + e.getMessage());
