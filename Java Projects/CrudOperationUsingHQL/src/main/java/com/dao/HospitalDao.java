@@ -23,7 +23,7 @@ public class HospitalDao {
 //			System.out.println("Patient details inserted successfully: " + h.getP_name() + ", Age: " + h.getP_age()
 //					+ ", Address: " + h.getP_address());
 			String hqlQuery = "insert into Hospital (P_name, P_age, P_address) values (:name, :age, :address)";
-			Query<Hospital> result = session.createQuery(hqlQuery);
+			Query<Hospital> result = session.createQuery(hqlQuery, Hospital.class);
 			result.setParameter("name", p_name);
 			result.setParameter("age", p_age);
 			result.setParameter("address", p_address);
