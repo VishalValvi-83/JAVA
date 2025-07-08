@@ -26,12 +26,11 @@ public class Hospital {
 		this.id = id;
 	}
 
-	public Hospital(int id, String p_name, int p_age, String p_address) {
+	public Hospital(String p_name, int p_age, String p_address) {
 		super();
-		this.id = id;
-		P_name = p_name;
-		P_age = p_age;
-		P_address = p_address;
+		this.P_name = p_name;
+		this.P_age = p_age;	
+		this.P_address = p_address;
 	}
 
 	public String getP_name() {
