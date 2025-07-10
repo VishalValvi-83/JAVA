@@ -6,7 +6,7 @@ public class EmployeeController {
 
 	public static void main(String[] args) {
 		EmployeeServices empServ = new EmployeeServices();
-//		empServ.updateData(0, null, 0, null, null, null);
+		empServ.updateData(0, null, 0, null, null, null);
 		
 		// empServ.insertData();
 		// empServ.deleteData();
